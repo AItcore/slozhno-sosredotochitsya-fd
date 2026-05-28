@@ -1,4 +1,16 @@
 :root {
+  --page-bg-image: url("../images/cover-image-dark.png");
+  --header-border-color: #ff0070;
+  --header-button-color: #ff0070;
+  --font-title-color: #db00ff;
+  --font-title-shadow-color: #ff0070;
+  --header-description-block-color: #ff0070;
+  --description-text-color: #000028;
+  --question-title-color: #ff0070;
+  --answer-bg-color: #ff0070;
+  --answer-title-color: #000028;
+  --answer-text-color: #f1b2ce;
+
   --page-padding: 10px;
   --theme-menu-direction: column;
   --theme-menu-align: end;

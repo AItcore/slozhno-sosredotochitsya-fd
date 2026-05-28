@@ -8,12 +8,28 @@
   --page-bg-image: url("../images/cover-image-light.png");
   --header-border-color: #353430;
   --header-button-color: #353430;
-  --font-title-color: #FFC2E6;
-  --font-title-shadow-color: #FF8DCB;
-  --header-description-block-color:#FF8DCB;
+  --font-title-color: #ffc2e6;
+  --font-title-shadow-color: #ff8dcb;
+  --header-description-block-color: #ff8dcb;
   --description-text-color: #353430;
-  --question-title-color:#353430;
-  --answer-bg-color:#FF8DCB;
-  --answer-title-color:#353430;
+  --question-title-color: #353430;
+  --answer-bg-color: #ff8dcb;
+  --answer-title-color: #353430;
   --answer-text-color: #353430;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --page-bg-image: url("../images/cover-image-light.png");
+    --header-border-color: #353430;
+    --header-button-color: #353430;
+    --font-title-color: #ffc2e6;
+    --font-title-shadow-color: #ff8dcb;
+    --header-description-block-color: #ff8dcb;
+    --description-text-color: #353430;
+    --question-title-color: #353430;
+    --answer-bg-color: #ff8dcb;
+    --answer-title-color: #353430;
+    --answer-text-color: #353430;
+  }
 }
