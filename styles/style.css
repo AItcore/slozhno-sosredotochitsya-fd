@@ -5,9 +5,9 @@
   gap: var(--page-gap);
   background:
     var(--page-bg-image) no-repeat center,
-    #000028;
+    var(--page-bg-color);
   background-attachment: fixed;
-  background-size: cover;
+  background-size: auto 100%;
 }
 
 .header {

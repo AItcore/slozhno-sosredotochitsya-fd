@@ -16,6 +16,7 @@
   --answer-bg-color: #ff8dcb;
   --answer-title-color: #353430;
   --answer-text-color: #353430;
+  --page-bg-color: #FFF1F7;
 }
 
 @media (prefers-color-scheme: light) {
