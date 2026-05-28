@@ -1,5 +1,315 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background:
+    var(--page-bg-image) no-repeat center fixed,
+    #000028;
+  background-size: cover;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 55px;
+  padding: var(--page-padding);
+  block-size: 100dvh;
+}
+
+.header-decoration {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid;
+  border-right: 1px solid;
+  border-color: var(--header-border-color);
+  margin-left: 35px;
+}
+
+.top-corner {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-self: end;
+  padding-right: 25px;
+}
+
+.bottom-corner {
+  align-self: flex-end;
+  rotate: 180deg;
+  margin: 0;
+}
+
+.header-status-block {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.header-status {
+  display: var(--theme-status-display);
+  color: #ff0070;
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+}
+
+.header-status-elipse {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 9px;
+  box-shadow:
+    0 0 6px #ff0070,
+    0 0 6px #ff0070;
+  background-color: #ff0070;
+}
+
+.header__theme-menu {
+  grid-row: 1;
+  display: flex;
+  flex-direction: var(--theme-menu-direction);
+  align-items: var(--theme-menu-align);
+  justify-content: var(--theme-menu-justify);
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: var(--theme-menu-list-direction);
+  align-items: var(--theme-menu-list-align);
+  justify-content: var(--theme-menu-justify);
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 26px;
+  width: 70px;
+  font-size: 1.125rem;
+  background: transparent;
+  color: var(--header-button-color);
+  border: none;
+}
+
+.header__theme-menu-button_active {
+  border: solid 1px var(--header-button-color);
+}
+
+.header-title {
+  grid-row: 2;
+  font-size: var(--header-title-size);
+  line-height: 0.83em;
+  font-weight: 700;
+  color: var(--font-title-color);
+  text-shadow: 4px 4px 0 var(--font-title-shadow-color);
+}
+
+.header-description-block {
+  grid-row: 3;
+  display: flex;
+  justify-self: end;
+  width: var(--header-description-block-size);
+}
+
+.header-description-text {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.3em;
+  background-color: var(--header-description-block-color);
+  color: var(--description-text-color);
+  height: min-content;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: var(--page-padding);
+  gap: var(--main-block-gap);
+}
+
+.main-section {
+  display: grid;
+  gap: 20px;
+}
+
+.block-section-how-to {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.question-title {
+  font-size: 1.125rem;
+  color: var(--question-title-color);
+}
+
+.block-answer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.answer-title {
+  background-color: var(--answer-bg-color);
+  color: var(--answer-title-color);
+  font-size: 1.125rem;
+  line-height: 1.3;
+}
+
+.answer-text {
+  font-size: 1.125rem;
+  line-height: 1.3;
+  color: var(--answer-text-color);
+}
+
+.block-warning {
+  font-size: 1.125rem;
+  background-color: var(--answer-bg-color);
+  color: var(--answer-title-color);
+}
+
+.gallery {
+  display: grid;
+  gap: var(--picture-block-gap);
+}
+
+.gallery-item {
+  inline-size: 100%;
+  block-size: 100%;
+  max-block-size: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-between;
+  padding: var(--page-padding);
+  height: 100dvh;
+  width: 100%;
+  background-color: var(--footer-bg-color);
+}
+
+.footer-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--header-title-size);
+  line-height: 0.83em;
+  font-weight: 700;
+  color: var(--font-title-color);
+  text-shadow: 4px 4px 0 var(--font-title-shadow-color);
+}
+
+.footer-decoration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid;
+  border-right: 1px solid;
+  border-color: var(--header-border-color);
+  padding: 0;
+  position: absolute;
+}
+
+@media (width >= 700px) {
+  .section-difficulty {
+    grid-template-rows: 1, min-content;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .section-difficulty .question-title {
+    grid-column: 1;
+  }
+
+  .section-difficulty .block-answer {
+    grid-column: 2 / span 2;
+  }
+
+  .section-negative-factor {
+    grid-template-rows: repeat(4, min-content);
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .section-negative-factor .question-title {
+    grid-column: 1;
+  }
+
+  .section-negative-factor .block-answer {
+    grid-column: span 3;
+  }
+
+  .section-how-to {
+    grid-template-rows: min-content;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .section-how-to .question-title {
+    grid-column: 1;
+  }
+
+  .section-how-to .block-section-how-to {
+    grid-column: 2 / span 2;
+  }
+
+  .gallery {
+    align-content: start;
+    grid-template-rows: repeat(3, min-content);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: dense;
+    box-sizing: border-box;
+  }
+
+  .gallery-item:nth-child(1) {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+  }
+  .gallery-item:nth-child(2) {
+    grid-row: 1 / span 2;
+    grid-column: 3;
+  }
+  .gallery-item:nth-child(3) {
+    grid-row: 2 / span 2;
+    grid-column: 1;
+  }
+  .gallery-item:nth-child(4) {
+    grid-row: 2;
+    grid-column: 2;
+  }
+  .gallery-item:nth-child(5) {
+    grid-row: 3;
+    grid-column: 2 / span 2;
+    gap: 0;
+  }
+}
+
+@media (width >= 1000px) {
+  .section-negative-factor {
+    grid-template-rows: repeat(2, min-content);
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .section-negative-factor .question-title {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .section-negative-factor .block-answer:nth-child(2) {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .section-negative-factor .block-answer:nth-child(3) {
+    grid-row: 2;
+    grid-column: 2;
+  }
+  .section-negative-factor .block-answer:nth-child(4) {
+    grid-row: 2;
+    grid-column: 3;
+  }
 }
