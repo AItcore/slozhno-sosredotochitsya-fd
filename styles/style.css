@@ -2,10 +2,11 @@
 
 .page {
   display: grid;
-  gap: 60px;
+  gap: var(--page-gap);
   background:
-    var(--page-bg-image) no-repeat center fixed,
+    var(--page-bg-image) no-repeat center,
     #000028;
+  background-attachment: fixed;
   background-size: cover;
 }
 

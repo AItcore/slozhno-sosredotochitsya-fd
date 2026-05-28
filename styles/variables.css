@@ -11,6 +11,7 @@
   --answer-title-color: #000028;
   --answer-text-color: #f1b2ce;
 
+  --page-gap: 40px;
   --page-padding: 10px;
   --theme-menu-direction: column;
   --theme-menu-align: end;
@@ -29,6 +30,7 @@
     --header-description-block-size: 50%;
     --main-block-gap: 70px;
     --picture-block-gap: 20px;
+    --page-gap: 60px;
   }
 }
 
