@@ -76,6 +76,7 @@
   flex-direction: var(--theme-menu-direction);
   align-items: var(--theme-menu-align);
   justify-content: var(--theme-menu-justify);
+  margin-block: var(--menu-margin);
 }
 
 .header__theme-menu-list {
@@ -110,6 +111,8 @@
   font-weight: 700;
   color: var(--font-title-color);
   text-shadow: 4px 4px 0 var(--font-title-shadow-color);
+  align-self: center;
+  margin-left: var(--header-title-margin);
 }
 
 .header-description-block {
@@ -117,6 +120,7 @@
   display: flex;
   justify-self: end;
   width: var(--header-description-block-size);
+  margin-block-start: var(--header-description-margin);
 }
 
 .header-description-text {
@@ -137,7 +141,8 @@
 
 .main-section {
   display: grid;
-  gap: 20px;
+  row-gap: 20px;
+  column-gap: 30px;
 }
 
 .block-section-how-to {

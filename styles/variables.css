@@ -16,22 +16,28 @@
   --page-padding: 10px;
   --theme-menu-direction: column;
   --theme-menu-align: end;
-  --theme-menu-justify: center;
+  --theme-menu-justify: end;
   --header-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --header-description-block-size: 100%;
   --main-block-gap: 50px;
   --picture-block-gap: 10px;
   --theme-menu-list-direction: column;
   --theme-menu-list-align: end;
+  --header-title-margin: 0;
+  --menu-margin: 10px;
+  --header-description-margin: 0px;
 }
 
 @media (width >= 700px) {
   :root {
     --page-padding: 20px;
     --header-description-block-size: 50%;
-    --main-block-gap: 70px;
+    --main-block-gap: 80px;
     --picture-block-gap: 20px;
     --page-gap: 60px;
+    --header-title-margin: -20px;
+    --menu-margin: 20px;
+    --header-description-margin: 10px;
   }
 }
 
@@ -42,5 +48,7 @@
     --theme-menu-list-direction: row;
     --header-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     --header-title-size: 9.8125rem;
+    --menu-margin: 0;
+    --header-description-margin: 20px;
   }
 }
