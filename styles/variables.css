@@ -26,6 +26,7 @@
   --header-title-margin: 0;
   --menu-margin: 10px;
   --header-description-margin: 0px;
+  --block-how-to-margin: 0;
 }
 
 @media (width >= 700px) {
@@ -38,6 +39,7 @@
     --header-title-margin: -20px;
     --menu-margin: 20px;
     --header-description-margin: 10px;
+    --block-how-to-margin: 10px;
   }
 }
 
@@ -50,5 +52,6 @@
     --header-title-size: 9.8125rem;
     --menu-margin: 0;
     --header-description-margin: 20px;
+    --block-how-to-margin: 0;
   }
 }

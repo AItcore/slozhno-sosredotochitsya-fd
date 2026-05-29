@@ -141,14 +141,14 @@
 
 .main-section {
   display: grid;
-  row-gap: 20px;
-  column-gap: 30px;
+  gap: 20px;
 }
 
 .block-section-how-to {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-inline-start: var(--block-how-to-margin);
 }
 
 .question-title {
