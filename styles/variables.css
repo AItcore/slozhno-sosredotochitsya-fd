@@ -15,6 +15,7 @@
   --page-gap: 40px;
   --page-padding: 10px;
   --theme-menu-direction: column;
+  --margin-dark-theme: 35px;
   --theme-menu-align: end;
   --theme-menu-justify: end;
   --header-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);

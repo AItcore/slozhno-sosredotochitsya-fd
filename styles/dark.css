@@ -6,10 +6,12 @@
 
 :root.theme-dark {
   --page-bg-image: url("../images/cover-image-dark.png");
+  --theme-status-display: inline-block;
+  --button-hover-color: #FF007066;
   --header-border-color: #FF0070;
   --header-button-color: #FF0070;
   --font-title-color:#DB00FF;
-  --font-title-shadow-color:#FF0070;
+  --font-shadow-color:#FF0070;
   --header-description-block-color:#FF0070;
   --description-text-color: #000028;
   --question-title-color:#FF0070;

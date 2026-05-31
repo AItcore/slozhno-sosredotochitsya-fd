@@ -30,7 +30,7 @@
   border-top: 1px solid;
   border-right: 1px solid;
   border-color: var(--header-border-color);
-  margin-left: 35px;
+  margin-left: var(--margin-dark-theme);
 }
 
 .top-corner {
@@ -61,7 +61,7 @@
 }
 
 .header-status-elipse {
-  display: inline-block;
+  display: var(--theme-status-display);
   width: 9px;
   height: 9px;
   border-radius: 9px;
@@ -88,8 +88,13 @@
   gap: 10px;
 }
 
+.header-theme-menu-item {
+  display: flex;
+}
+
 .header__theme-menu-button {
   display: flex;
+  padding: 0;
   justify-content: center;
   align-items: center;
   height: 26px;
@@ -100,9 +105,19 @@
   border: none;
 }
 
+.header__theme-menu-button:hover {
+  text-decoration: none;
+  border: 1px solid var(--button-hover-color);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+  border-bottom: 1px solid var(--header-button-color);
+}
+
 .header__theme-menu-button_active {
   pointer-events: none;
-  border: solid 1px var(--header-button-color);
+  border: 1px solid var(--header-button-color);
 }
 
 .header-title {
@@ -111,7 +126,7 @@
   line-height: 0.83em;
   font-weight: 700;
   color: var(--font-title-color);
-  text-shadow: 4px 4px 0 var(--font-title-shadow-color);
+  text-shadow: 4px 4px 0 var(--font-shadow-color);
   align-self: center;
   margin-left: var(--header-title-margin);
 }
@@ -176,6 +191,19 @@
   color: var(--answer-text-color);
 }
 
+.in-text-url {
+  text-decoration: none;
+  text-shadow: 1.5px 1.5px 0 var(--font-shadow-color);
+}
+
+.in-text-url:hover {
+  text-decoration: underline;
+}
+
+.in-text-url:focus {
+  outline: 1px solid var(--answer-text-color);
+}
+
 .block-warning {
   font-size: 1.125rem;
   background-color: var(--answer-bg-color);
@@ -212,7 +240,7 @@
   line-height: 0.83em;
   font-weight: 700;
   color: var(--font-title-color);
-  text-shadow: 4px 4px 0 var(--font-title-shadow-color);
+  text-shadow: 4px 4px 0 var(--font-shadow-color);
 }
 
 .footer-decoration {
