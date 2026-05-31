@@ -1,7 +1,8 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: var(--page-gap);
   background:
     var(--page-bg-image) no-repeat center,
