@@ -227,7 +227,7 @@
   position: absolute;
 }
 
-@media (width >= 700px) {
+@media (width >= 768px) {
   .section-difficulty {
     grid-template-rows: 1, min-content;
     grid-template-columns: 1fr 1fr 1fr;
@@ -298,7 +298,7 @@
   }
 }
 
-@media (width >= 1000px) {
+@media (width >= 1024px) {
   .section-negative-factor {
     grid-template-rows: repeat(2, min-content);
     grid-template-columns: 1fr 1fr 1fr;
